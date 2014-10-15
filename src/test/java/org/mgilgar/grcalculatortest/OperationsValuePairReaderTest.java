@@ -18,15 +18,21 @@ import org.mgilgar.grcalculatortest.model.OperationValuePair;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
+/**
+ * Test class for {@link OperationsValuePairReader}.
+ * 
+ * @author mgilgar
+ *
+ */
 @RunWith(MockitoJUnitRunner.class)
-public class OperationsReaderTest {
+public class OperationsValuePairReaderTest {
 
    private static final String       INPUT_ADD      = "add 5";
    private static final String       INPUT_APPLY    = "apply 4";
    private static final String       INPUT_MULTIPLY = "multiply 3";
    private static final String       INPUT_WRONG    = "xxx 3";
 
-   private OperationsReader          operationsReader;
+   private OperationsValuePairReader operationsReader;
 
    @Mock
    private BufferedReader            in;
@@ -36,7 +42,7 @@ public class OperationsReaderTest {
 
    @Before
    public void setUp() {
-      operationsReader = new OperationsReader(in, factory);
+      operationsReader = new OperationsValuePairReader(in, factory);
       when(factory.get(INPUT_ADD)).thenReturn(new OperationValuePair(new AddOperation(), 5));
       when(factory.get(INPUT_APPLY)).thenReturn(new OperationValuePair(new ApplyOperation(), 4));
       when(factory.get(INPUT_MULTIPLY)).thenReturn(new OperationValuePair(new MultiplyOperation(), 3));

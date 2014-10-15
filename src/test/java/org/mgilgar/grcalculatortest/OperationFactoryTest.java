@@ -16,6 +16,12 @@ import org.mgilgar.grcalculatortest.model.MultiplyOperation;
 import org.mgilgar.grcalculatortest.model.Operation;
 import org.mgilgar.grcalculatortest.model.SubstractOperation;
 
+/**
+ * Test class for {@link OperationFactory}
+ * 
+ * @author mgilgar
+ *
+ */
 public class OperationFactoryTest {
 
    private static final String INPUT_ADD       = "add 5";

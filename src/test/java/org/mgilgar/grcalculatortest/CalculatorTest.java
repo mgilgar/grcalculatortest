@@ -14,6 +14,12 @@ import org.mgilgar.grcalculatortest.model.MultiplyOperation;
 import org.mgilgar.grcalculatortest.model.OperationValuePair;
 import org.mgilgar.grcalculatortest.model.SubstractOperation;
 
+/**
+ * Test class for {@link Calculator}.
+ * 
+ * @author mgilgar
+ *
+ */
 public class CalculatorTest {
 
    private static final int VALUE_2 = 2;

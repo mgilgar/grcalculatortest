@@ -1,0 +1,6 @@
+multiply 3
+add 4
+divide 2
+substract 1
+multiply 7
+apply 100

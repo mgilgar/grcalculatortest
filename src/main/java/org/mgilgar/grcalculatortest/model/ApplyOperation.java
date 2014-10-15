@@ -1,13 +1,18 @@
 package org.mgilgar.grcalculatortest.model;
 
-
+/**
+ * ApplyOperation class.
+ *
+ * @author mgilgar
+ *
+ */
 public class ApplyOperation extends Operation {
 
    private static final String PREFIX = "apply";
 
    @Override
-   public long calculate(final long op1, final long op2) {
-      return op1;
+   public long calculate(final long... op) {
+      return op[0];
    }
 
    @Override

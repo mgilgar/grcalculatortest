@@ -1,13 +1,18 @@
 package org.mgilgar.grcalculatortest.model;
 
-
+/**
+ * MultiplyOperation class.
+ *
+ * @author mgilgar
+ *
+ */
 public class MultiplyOperation extends Operation {
 
    private static final String PREFIX = "multiply";
 
    @Override
-   public long calculate(final long op1, final long op2) {
-      return op1 * op2;
+   public long calculate(final long... op) {
+      return op[0] * op[1];
    }
 
    @Override
